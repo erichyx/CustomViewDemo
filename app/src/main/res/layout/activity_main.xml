@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_waterfall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="waterfallClick"
+        android:text="自定义瀑布流布局"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_drag_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="QQ粘滞气泡"
+        android:onClick="dragBubbleClick"
+        app:layout_constraintStart_toEndOf="@+id/btn_waterfall"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_scratch_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="刮刮卡"
+        android:onClick="scratchCardClick"
+        app:layout_constraintStart_toEndOf="@+id/btn_drag_bubble"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_path_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="PathMeasure"
+        android:onClick="pathMeasureClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_waterfall" />
+
+    <Button
+        android:id="@+id/btn_svg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SVG示例"
+        android:onClick="svgClick"
+        app:layout_constraintStart_toEndOf="@+id/btn_path_measure"
+        app:layout_constraintTop_toBottomOf="@+id/btn_drag_bubble" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="honorAvatarClick"
+        android:text="自定义头像框"
+        app:layout_constraintStart_toEndOf="@+id/btn_svg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scratch_card" />
+
+    <Button
+        android:id="@+id/btn_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="仪表盘"
+        android:onClick="dashboardClick"
+        app:layout_constraintStart_toStartOf="@+id/btn_waterfall"
+        app:layout_constraintTop_toBottomOf="@+id/btn_path_measure" />
+
+    <Button
+        android:id="@+id/btn_pie_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="pieChartClick"
+        android:text="饼图"
+        app:layout_constraintStart_toEndOf="@+id/btn_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/btn_svg" />
+
+    <Button
+        android:id="@+id/btn_avatar"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="avatarClick"
+        android:text="头像框"
+        app:layout_constraintStart_toEndOf="@+id/btn_pie_chart"
+        app:layout_constraintTop_toBottomOf="@+id/btn_svg" />
+
+    <Button
+        android:id="@+id/btn_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="sportsClick"
+        android:text="运动图"
+        app:layout_constraintStart_toStartOf="@+id/btn_waterfall"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dashboard" />
+
+    <Button
+        android:id="@+id/btn_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="imageTextClick"
+        android:text="ImageText"
+        app:layout_constraintStart_toEndOf="@+id/btn_sports"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pie_chart" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="cameraClick"
+        android:text="CameraView"
+        app:layout_constraintStart_toEndOf="@+id/btn_image_text"
+        app:layout_constraintTop_toBottomOf="@+id/btn_avatar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="materialEditTextClick"
+        android:text="materialEditText"
+        app:layout_constraintStart_toStartOf="@+id/btn_waterfall"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sports" />
+
+    <Button
+        android:id="@+id/btn_scalable_imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="scalableImageViewClick"
+        android:text="scalableImageView"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_camera" />
+</android.support.constraint.ConstraintLayout>

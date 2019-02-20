@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DragBubbleView">
+        <attr name="bubble_radius" format="dimension"/>
+        <attr name="bubble_color" format="color"/>
+        <attr name="bubble_text" format="string"/>
+        <attr name="bubble_textSize" format="dimension"/>
+        <attr name="bubble_textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgressView">
+        <attr name="logo" format="reference" />
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="logoSampleSize" format="integer" />
+        <attr name="orientation">
+            <enum name="CW" value="0" />
+            <enum name="CCW" value="1" />
+        </attr>
+        <attr name="gradientType">
+            <enum name="NONE" value="0" />
+            <enum name="CENTER" value="1" />
+            <enum name="SWEEP" value="2" />
+            <enum name="LINEAR_LTR" value="3" />
+            <enum name="LINEAR_TTB" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="HonorAvatarView">
+        <attr name="frame" format="reference"/>
+        <attr name="honorLabel" format="reference"/>
+        <attr name="placeHolder" format="reference"/>
+        <attr name="avatar" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialEditText" >
+        <attr name="useFloatingLabel" format="boolean" />
+        <attr name="Eric" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.WaterfallLayoutFragment">
+
+    <cn.eric.customviewdemo.widget.WaterfallFlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffff00">
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hello" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hello,hi" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="你是我的"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hello,man" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="helloview" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="view" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="我是你的"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="he" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hello" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="textview" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="view" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hello,view" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hello,mt" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hel" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hel" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="hel2" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="android" />
+
+        <TextView
+            style="@style/text_flag_01"
+            android:text="jetpack" />
+
+    </cn.eric.customviewdemo.widget.WaterfallFlowLayout>
+
+</FrameLayout>
