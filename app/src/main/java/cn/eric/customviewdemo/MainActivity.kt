@@ -66,4 +66,8 @@ class MainActivity : AppCompatActivity() {
     fun scalableImageViewClick(view: View) {
         ShowActivity.actionStart(this, ShowActivity.ViewType.SCALABLE_IMAGE_VIEW.name)
     }
+
+    fun cityLetterIndexClick(view: View) {
+        ShowActivity.actionStart(this, ShowActivity.ViewType.LETTER_INDEX_VIEW.name)
+    }
 }

@@ -34,6 +34,7 @@ class ShowActivity : AppCompatActivity() {
             ViewType.CAMERA -> CameraViewFragment()
             ViewType.MATERIAL_EDIT_TEXT -> MaterialEditTextFragment()
             ViewType.SCALABLE_IMAGE_VIEW -> ScalableImageViewFragment()
+            ViewType.LETTER_INDEX_VIEW -> CityLetterIndexFragment()
         }
 
         ActivityUtils.replaceFragmentToActivity(supportFragmentManager, fragment,
@@ -42,7 +43,7 @@ class ShowActivity : AppCompatActivity() {
 
     enum class ViewType {
         WATERFALL_FLOW,DRAG_BUBBLE,SCRATCH_CARD,PATH_MEASURE,SVG_MAP,HONOR_AVATAR,
-        DASHBOARD,PIE_CHART,AVATAR,SPORTS,IMAGE_TEXT,CAMERA,MATERIAL_EDIT_TEXT,SCALABLE_IMAGE_VIEW
+        DASHBOARD,PIE_CHART,AVATAR,SPORTS,IMAGE_TEXT,CAMERA,MATERIAL_EDIT_TEXT,SCALABLE_IMAGE_VIEW,LETTER_INDEX_VIEW
     }
 
     companion object {
